@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.section-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-section{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat;
+}
+.p-one img{
+    max-width:500px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+}
+
+.section-one{
+    background-image: url(../assets/bg.jpg);
+}
+
+.card-container{
+    padding: 50px;
+    max-width: 500px;    
+}
+
+.li-two img{
+    max-width:300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 170px;
+}
+
+.texto{
+    color: #ff8c00;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align-last: center;
+}
+
+.a{
+    position: relative;
+
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    float: left;
+    margin-left: 5px;
+   }
+
+.b{
+    position: relative;
+
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+
+
+.div-one{
+    width: 50%;
+}
+
+.p-one-border{
+    border: 4px solid;
+    border-color: #ff8c00;
+    border-style:dotted;
+}
+
+.div-two{
+    width: 50%;
+}
+
+input{
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: #fff;
+    font-weight: bold;
+    border: #fff;
+}
+
+form{
+    display: grid, inline-flex;
+    color: #ff8c00;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border: 4px solid;
+    border-color: #ff8c00;
+    border-style:dotted;
+    padding: 15px;
+    margin-top: 300px;
+}
+
+footer{
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+}
+
+header{
+    height: 0px;
+    color: #ff8c00;
+    font-size:xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align: center;
+    }
+    
+@keyframes move {
+    0%   {background-color:whitesmoke; left:150px; top:0px;}
+    25%  {background-color:gray; left:150px; top:0px;}
+    50%  {background-color:rgb(66, 71, 66); left:150px; top:0px;}
+    75%  {background-color:rgb(33, 34, 33); left:150px; top:0px;}
+    100% {background-color:black; left:150px; top:0px;}
+}
